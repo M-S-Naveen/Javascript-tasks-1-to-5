@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-1</title>
+    <style>
+        button {
+            width: 200px;
+            height: 200px;   
+            border-radius: 30px;        
+            font-size: 50px;            
+            font-style: oblique; 
+        }
+        .a {
+            background-color: aqua; 
+        }
+        .b {
+            background-color: tomato;
+        }
+        .c {
+            background-color: greenyellow;
+        }
+        .d {
+            background-color: rgb(128, 91, 91);
+        }
+        body {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+        <button class="a" onclick="check(this)">A</button>
+        <button class="b" onclick="check(this)">B</button>
+        <button class="c" onclick="check(this)">C</button>
+        <button class="d" onclick="check(this)">D</button>
+    </body>
+    <script>
+        // we need to create an empty string to add values after the click event //
+        let content = "";
+        function check(elem){
+            let click = elem.innerHTML;
+            //concat () inbuild function joins the letters clicked in the content //
+            content = content.concat(click);
+            alert(content);
+        
+    }
+    </script>
+
+
+</html>

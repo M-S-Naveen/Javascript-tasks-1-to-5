@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <script>
+        function vowels(elem){
+        let name = elem.innerHTML;
+        let firstLetter = name.charAt(0);
+        // following line is regex method to choose certain letters //
+        // And test() function returns true or false //
+        let wordFirstLetter = /[aieouAIEOU]/gi;
+        if (wordFirstLetter.test(firstLetter)) {
+            elem.style.backgroundColor="red";
+        } else {
+            elem.style.backgroundColor="green";
+        }
+    }
+    </script>
+</body>
+    <style>
+        body {
+            position: absolute;
+            left: 30%;        
+        }
+        button{
+           display: grid;
+           grid-template-rows: 1fr 1fr ;
+            width: 500px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="vowels(this)">Allie</button>
+    <button onclick="vowels(this)">Gordon</button>
+    <button onclick="vowels(this)">Bruce</button>
+    <button onclick="vowels(this)">Dale</button>
+    <button onclick="vowels(this)">Randall</button>
+    <button onclick="vowels(this)">Inba</button>
+    <button onclick="vowels(this)">Lopez</button>
+    <button onclick="vowels(this)">Roland</button>
+    <button onclick="vowels(this)">Amrabat</button>
+    <button onclick="vowels(this)">vowels</button>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>task2</title>
+    <script>
+      // Annotation is used to textually represent an object with a string that can be edited at runtime //
+      function annotate() {
+        let liveTyping = document.getElementById("id").value;
+        document.getElementById("printchatbox").innerHTML = liveTyping;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="id" onkeydown="annotate()" />
+    <div id="printchatbox"></div>
+  </body>
+</html>
